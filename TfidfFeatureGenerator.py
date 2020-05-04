@@ -84,9 +84,9 @@ class TfidfFeatureGenerator(FeatureGenerator):
         print('xBodyTfidf.shape:', xBodyTfidf.shape)
         print('simTfidf.shape:', simTfidf.shape)
 
-        # return [xHeadlineTfidf, xBodyTfidf, simTfidf.reshape(-1, 1)]
+        return [xHeadlineTfidf, xBodyTfidf, simTfidf.reshape(-1, 1)]
 
-        return [simTfidf.reshape(-1, 1)]
+        # return [simTfidf.reshape(-1, 1)]
 
  #   Copyright 2017 Cisco Systems, Inc.
  #  

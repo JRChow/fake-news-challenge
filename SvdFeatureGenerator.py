@@ -33,7 +33,7 @@ class SvdFeatureGenerator(FeatureGenerator):
         # print 'SvdFeatureGenerator, n_test:',n_test
 
         tfidfGenerator = TfidfFeatureGenerator('tfidf')
-        featuresTrain = tfidfGenerator.read('train')
+        featuresTrain = tfidfGenerator.read(header)
         xHeadlineTfidfTrain, xBodyTfidfTrain = featuresTrain[0], featuresTrain[1]
         
         xHeadlineTfidf = xHeadlineTfidfTrain
